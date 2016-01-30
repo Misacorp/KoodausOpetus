@@ -1,6 +1,41 @@
-body: {
+html {
+  background-color: #444444;
+}
+
+body {
   background-color: yellow;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
   }
+
+#inputControls {
+  margin: auto;
+  display: block;
+  width: 80%;
+}
+
+#input {
+  background-color: black;
+  color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 2.5em;
+  padding: 0.5em;
+}
+
+#sendButton {
+  width: 5em;
+  height: 2.5em;
+}
+
+#messages {
+  background-color: black;
+  color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em;
+  width: 80%;
+  height: 10em;
+}
