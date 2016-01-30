@@ -1,21 +1,29 @@
-var button = document.getElementById("button");
-var input = document.getElementById("input");
-var output = document.getElementById("messages");
-var lastMessage;
-
-sendButton.onclick = function() {
-  postMessage();
-  clearInput();
+function getInput(src) {			//	Gets input from specified source.
+  var text;
+  try {
+    text = src.innerHTML;
+  }
+  catch(err) {
+  	console.error("ERRROR: Tried to read input from invalid location.")
+  }
+  return text;
 }
 
-function postMessage() {
-  lastMessage = document.getElementById("input").innerHTML;    // Get message fron input
-  if(lastMessage.length > 0) {
-    var text = output.innerHTML + "<br>" + lastMessage;          // Add last message to existing messages
-    output.innerHTML = text;                                     // Update messages
+function postMessage(msg) {			//	Posts given message.
+  if(msg.length > 0) {
+    var text = output.innerHTML + "<br>" + msg;
+    output.innerHTML = text;
+  }
+  else {
+  	console.warn("NOTE: Empty message not posted.")
   }
 }
 
-function clearInput() {
-  input.innerHTML = "";
+function clearText(loc) {			//	Clears innerHTML in specified location.
+  try {
+  	loc.innerHTML = "";
+  }
+  catch(err) {
+  	console.error("ERROR: Tried clearing innerHTML from invalid location.");
+  }
 }
