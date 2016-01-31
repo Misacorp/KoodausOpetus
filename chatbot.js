@@ -60,7 +60,7 @@ function nappula() {
     }
     vaihe++;
     koneViesti("Kuinka vanha olet?");
-    return true;
+    return;
   }
 
   if(vaihe == 1) {
@@ -75,7 +75,7 @@ function nappula() {
     }
     vaihe++;
     koneViesti("Kuinka monta kertaa huudetaan \"Eläköön!\"?");
-    return true;
+    return;
   }
 
   if(vaihe == 2) {
@@ -85,7 +85,7 @@ function nappula() {
     }
     vaihe++;
     koneViesti("Mikä muuten on nimesi?");
-    return true;
+    return;
   }
 
   if(vaihe == 3) {
@@ -96,6 +96,6 @@ function nappula() {
       koneViesti("Hauska tavata " + vastaus + ".");
     }
     vaihe++;
-    return true;
+    return;
   }
 }
