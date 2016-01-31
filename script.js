@@ -1,7 +1,7 @@
 function getInput(src) {			//	Gets input from specified source.
   var text;
   try {
-    text = src.innerHTML;
+    text = src.textContent;
   }
   catch(err) {
   	console.error("ERRROR: Tried to read input from invalid location.")

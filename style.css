@@ -43,3 +43,15 @@ body {
   height: 15em;
   overflow-y: auto;
 }
+
+#debugStuff {
+  margin: auto;
+  padding: 0.5em;
+  width: 80%;
+}
+
+#phaseCounter {
+  text-align: right;
+  color: #DD8800;
+  font-size: 1.5em;
+}
